@@ -1,0 +1,307 @@
+﻿@font-face {
+    font-family: MainFont;
+    src: url('../Font/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: MainHeadingFont;
+    src: url('../Font/Roboto-Bold.ttf');
+}
+body {
+    background-color: black;
+    margin: 0px;
+    background-image: url('../Assets/SiteDecoration/GroupedSignsOnTarmac.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position-x: left;
+    background-position-Y: top;
+    background-size: cover;
+    background-size: auto 25%;
+    max-width: 100%;
+    height: auto;
+    padding:0px;
+}
+h1 {
+    color: white;
+    font-size: clamp(18px, 1.5vw, 36px);
+    padding: clamp(16px, 2vw, 48px);
+    font-family: MainHeadingFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-decoration: underline;    
+    margin: 0;
+}
+.h1Highlighted {
+    color: red;
+    font-size: clamp(20px, 1.75vw, 40px);
+    font-weight: bold;
+}
+p {
+    color: black;
+    font-size: clamp(16px, 1.5vw, 32px);
+    padding: clamp(16px, 2vw, 48px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0;
+}
+a {
+    color: white;
+    font-size: clamp(18px, 1.5vw, 36px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainHeadingFont, Arial, Times New Roman, Serif;
+    vertical-align: bottom;
+    text-decoration: underline;
+    text-align: center;
+    padding: 0px;    
+}
+
+/* Primay container - fit most content inside - start - */
+.primaryContainer {
+    padding: clamp(1px, 4vw, 1000px);
+}
+/* - end - */
+
+/* Secondary container - start - */
+.secondaryContainer {
+    padding: clamp(5px, 0.5vw, 10px);
+    background: black;
+    border-radius: 50px;
+}
+/* - end - */
+
+/* - orange highlight - background for main body - start - */
+.mainTextBackground {
+    padding: clamp(2px, 0.1vw, 5px);
+    background-color: rgb(255 161 0);
+    margin: clamp(5px, 0.5vw, 10px) 0px clamp(5px, 0.5vw, 10px) 0px;
+}
+/* - end - */
+
+/* Tertiary container - start - */
+.tertiaryContainer {
+    padding: clamp(2px, 0.1vw, 5px);
+    background: black;   
+}
+/* - end - */
+
+
+
+
+
+
+
+/* background for text - start - */
+.textBackground {
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: clamp(8px, 2vw, 64px);
+    overflow: hidden;
+}
+/* - end - */
+
+
+/* Container for positioning objects by absolute location within a relative position on the page - start - */
+.absolutePositionContainer {
+    position: relative;
+    height: clamp(28px, 3.3vw, 78px);
+    padding: 0px;
+    margin: clamp(-30px, -2vw, -10px);
+    background-color: rgba(190, 106, 33, 0.8);    
+}
+/* - end - */
+
+/* Upside-Down Trapezoid background for text - start - */
+.trapezoidTextBackgroundInverted {
+    border-left: clamp(20px, 3vw, 75px) solid transparent;
+    border-right: clamp(20px, 3vw, 75px) solid transparent;
+    border-top: clamp(25px, 3vw, 75px) solid rgba(0,0,0,1);
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+}
+/* - end - */
+/* Upside-Down Trapezoid background for text - start - */
+.trapezoidTextBackground {
+    border-left: clamp(20px, 3vw, 75px) solid transparent;
+    border-right: clamp(20px, 3vw, 75px) solid transparent;
+    border-bottom: clamp(25px, 3vw, 75px) solid rgba(0,0,0,1);
+    margin: 0px;
+    padding: 0px;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    width: auto;
+}
+/* - end - */
+
+
+
+
+
+
+
+
+
+
+/* Upper Link Container - start - */
+.upperLinkContainer {
+    background-color: rgba(0,0,0,0); 
+    border-radius: 50px 50px 0px 0px; 
+    padding: clamp(10px, 2vw, 30px); 
+    text-align: center; 
+    background-image: url('../Assets/SiteDecoration/BlackStripes.jpg'); 
+    background-repeat: repeat; 
+    background-attachment: fixed; 
+    background-position-x: center; 
+    background-position-Y: center; 
+    background-size: cover; 
+    background-size: auto 4%; 
+}
+/* - end - */
+
+/* Upper Link Grid - start - */
+.grid-containerUpper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1px 1px;
+    background-color: rgba(0,0,0,0.00);
+    padding: clamp(5px, 1vw, 10px);
+}
+    .grid-containerUpper > div {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0;
+    }
+.upperitem1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.upperitem2 {
+    grid-column-start: 2;
+    grid-column-end: 3; 
+}
+.upperitem3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.upperItemFormat {
+    color: white;
+    font-size: clamp(14px, 1.25vw, 28px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: orange;
+}
+/* - end - */
+
+/* Lower Link Container - start - */
+.lowerLinkContainer {
+    background-color: rgba(0,0,0,0);
+    border-radius: 0px 0px 50px 50px;
+    padding: clamp(10px, 2vw, 30px);
+    background-image: url('../Assets/SiteDecoration/BlackStripes.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-Y: center;
+    background-size: cover;
+    background-size: auto 4%;
+}
+/* - end - */
+
+/* Lower Link Grid  - start - */
+.grid-ContainerLower {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1px 1px;
+    background-color: rgba(0,0,0,0.00);
+    padding: clamp(5px, 1vw, 10px);
+}
+    .grid-ContainerLower > div {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0;
+    }
+.lowerItem1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.lowerItem2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.lowerItem3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.lowerItemFormat {
+    color: white;
+    font-size: clamp(14px, 1.25vw, 28px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: orange;
+}
+/* - end - */
+
+header {
+    padding: 0px clamp(1px, 4vw, 1000px) 0px clamp(1px, 4vw, 1000px);
+}
+/* Header Add Banner Container Outline - start - */
+.headerAddBannerContainerOutline {
+    background-color: black;
+    padding: 0px clamp(5px, 0.5vw, 10px) clamp(5px, 0.5vw, 10px) clamp(5px, 0.5vw, 10px);
+    margin: 0px;
+    text-align: center;
+    border-radius: 0px 0px 50px 50px;
+}
+/* - end - */
+/* Header Add Banner Container - start - */
+.headerAddBannerContainer {
+    background-color: rgba(0,0,0,0);
+    border-radius: 0px 0px 50px 50px;
+    margin: 0px;
+    background-image: url('../Assets/SiteDecoration/BlackStripes.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-Y: center;
+    background-size: cover;
+    background-size: auto 4%;
+    text-align: center;
+}
+/* - end - */
+
+footer {
+    padding: 0px clamp(1px, 4vw, 1000px) 0px clamp(1px, 4vw, 1000px);
+}
+/* Footer Add Banner Container Outline - start - */
+.footerAddBannerContainerOutline {
+    background-color: black;
+    padding: clamp(5px, 0.5vw, 10px) clamp(5px, 0.5vw, 10px) 0px clamp(5px, 0.5vw, 10px);
+    border-radius: 50px 50px 0px 0px;
+    margin: 0px;
+}
+/* - end - */
+/* Footer Add Banner Container - start - */
+.footerAddBannerContainer {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px 50px 0px 0px;
+    text-align: center;
+    background-image: url('../Assets/SiteDecoration/BlackStripes.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-Y: center;
+    background-size: cover;
+    background-size: auto 4%;
+    margin: 0px;
+    padding: 0px;
+}
+/* - end - */
