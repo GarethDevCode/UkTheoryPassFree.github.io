@@ -10,14 +10,13 @@
     <!-- Load JavaScript -->
     <script src="../Script.js"></script>
 
-    <style>
+    <style>      
 
     </style>
 
 </head>
 
 <body>
-  
     <header>
         <div class="headerAddBannerContainerOutline">
             <div class="headerAddBannerContainer">
@@ -26,10 +25,12 @@
         </div>
     </header>
 
-    <!-- Primary Container to fit most content inside - start - -->
-    <div class="primaryContainer">
-        <!-- Secondary Container to form outline - start - -->
-        <div class="secondaryContainer">
+
+
+    <!-- main - start - -->
+    <main>
+        <!-- Primary Container to form outline - start - -->
+        <div class="primaryContainer">
 
 
 
@@ -48,15 +49,16 @@
                 </div>
             </div>
             <!-- Upper Link Container - end - -->
+           
 
-            
 
-                <!-- Main section for content - start - -->
-            <div class="mainTextBackground">
 
-                <div class="tertiaryContainer">
+                <div style="background-color: rgba(0,0,0,0); background-image: url('../Assets/SiteDecoration/ScratchTex.jpg'); background-repeat: repeat; background-attachment: fixed; background-position-x: center; background-position-Y: center; background-size: cover; background-size: auto 50%; margin:0px;">
 
-                    <div style="background-color: rgba(0,0,0,0); padding: clamp(10px, 2vw, 30px); background-image: url('../Assets/SiteDecoration/ScratchTex.jpg'); background-repeat: repeat; background-attachment: fixed; background-position-x: center; background-position-Y: center; background-size: cover; background-size: auto 50%; ">
+
+                    <div class="secondaryContainer">
+
+
 
                         <div class="absolutePositionContainer" style="margin-bottom: clamp(8px, 2vw, 64px);">
 
@@ -65,7 +67,7 @@
 
                             <p style="margin: 0px; padding: 0px; color: white; position: absolute; top: clamp(1%, 0.5vw, 25%); left: 0px; width: 100%; text-align: center;">
                                 Switch to high constrast
-                            </p>                           
+                            </p>
 
 
 
@@ -91,25 +93,79 @@
                                 PURPOSE
                             </h1>
                             <p>
-                                I decided to set up this site in early 2022 after I passed my thoery test. When studying for it, I was surprised to discover many websites lock their content away behind a paywall.
-                                Considering that all UK drivers are mandated by law to know these facts, it is quite startling that some websites try to withhold the information.
-                                I decided to compile the required information into a single easy to use resource to help other learners pass their tests.
-                                It already costs far too much to learn how to drive. Save your money for real world driving lessons, don't pay for online courses.
+                                This site is intended as a free and easy to navigate resource for the UK Driving Theory test.
+                                <span id="dots">...</span>
+                                <span id="more">
+                                    All UK drivers are mandated by law to know these essential facts. As such, it should be easy for every UK citizen to access.
+
+                                    Yes, there are many other websites that do this: however, many of which require registration and/or payment.
+                                    This adds an unnecesary step to an already difficult and costly process.
+
+                                    It is worth mentioning that the UK goverment offers free study material for leaner drivers. While this is helpful, navigation can be obtuse and practice content is
+                                    unavailable for free - except some minor samples. For more information please see the subsequent section.
+                                </span>
+                            </p>
+                            <div class="buttonContainer">
+                                <button onclick="viewMoreFunction('dots', 'more', 'myBtn')" id="myBtn" class="buttonStyle"><b>Show More</b></button>
+                            </div>
+
                         </div>
                         <div class="textBackground">
                             <h1 style="text-align: center; background-color: rgba(255, 106, 0, 0.5); color: black;">
-                                WEBSITE COPYRIGHT
+                                UK GOVERMENT DVSA RESOURCES
+                            </h1>
+                            <p>
+                                You can find the essentials for free, directly from the UK Goverment:<br />
+                                <span id="dotsUGDR">...</span>
+                                <span id="moreUGDR">
+                                    <br />
+                                    <a href="https://www.gov.uk/learn-to-drive-a-car">Learn to drive overview </a>  <br />
+                                    <br />
+                                    <a href="https://www.gov.uk/guidance/national-standard-for-driving-cars-and-light-vans-category-b">National standard for driving cars</a>  <br />
+                                    <br />
+                                    <a href="https://www.gov.uk/guidance/the-highway-code">Free online highway code</a>  <br />
+                                    <br />
+                                    <a href="https://www.gov.uk/government/publications/know-your-traffic-signs ">Free Traffic signs pdf (digital book)</a>  <br />
+                                    <br />
+                                    <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/519129/know-your-traffic-signs.pdf">Free Traffic signs pdf (digital book) direct download link</a>  <br />
+                                    <br />
+                                    <br />
+                                    The state of the goverments free practive tests/questions is another matter. Except for a few samples, it requires a recurring payments and a subscription to access.
+                                    <br />
+                                    <br />
+                                    <a href="https://www.safedrivingforlife.info/free-practice-tests/practice-theory-test-for-car-drivers-1-of-2/">Practice theory test - only a sample</a>  <br />
+                                    <br />
+                                    <a href=" https://www.safedrivingforlife.info/free-practice-tests/hazard-perception-test/">Hazard perception practice test - only a sample</a>  <br />
+                                </span>
+                            </p>
+                            <div class="buttonContainer">
+                                <button onclick="viewMoreFunction('dotsUGDR', 'moreUGDR', 'myBtnUGDR')" id="myBtnUGDR" class="buttonStyle"><b>Show More</b></button>
+                            </div>
+                        </div>
+                        <div class="textBackground">
+                            <h1 style="text-align: center; background-color: rgba(255, 106, 0, 0.5); color: black;">
+                                WEBSITE COPYRIGHT AND DISCLAIMER
                             </h1>
                             <p>
                                 The information contained on this site was derived from the Government highway code and traffic signs.
                                 The information is available for free and is distributed inline with their respective copyright policy.
-                                This website is in no way associated with the UK Government, DVSA or DVLA.
-                                Any other sources will be listed in accordance with their usage policy.
-                            </p>
-                            <p>
-                                This site is written, designed and owned by Gareth Tim Sibson.
-                            </p>
-                        </div>                     
+                                <span id="dotsWCAD">...</span>
+                                <span id="moreWCAD">
+                                    The test questions were written by myself and where the are is not credited, it was created by me.
+                                    This website is in no way associated with the UK Government, DVSA or DVLA.
+                                    Any other sources will be listed in accordance with their usage policy.
+                                    <br />
+                                    This site and the information is provided for free and as is. It may contain errors.
+                                    <br />
+                                    If you spot and error, I will do my best to resolve it ASAP. Please use the contact page to inform me of the issue.
+                                    <br />
+                                    This site is written, designed and owned by Gareth Tim Sibson.
+                                </span>
+                            </p>                          
+                            <div class="buttonContainer">
+                                <button onclick="viewMoreFunction('dotsWCAD', 'moreWCAD', 'myBtnWCAD')" id="myBtnWCAD" class="buttonStyle"><b>Show More</b></button>
+                            </div>
+                        </div>
                         <div class="textBackground">
                             <h1 style="text-align: center; background-color: rgba(255, 106, 0, 0.5); color: black;">
                                 DEVELOPMENT
@@ -119,46 +175,34 @@
                             </p>
                         </div>
 
-                        <div class="absolutePositionContainer" style="margin-top: clamp(8px, 2vw, 64px);">
-
-                            <div class="trapezoidTextBackground">
-                            </div>
-
-                            <p style="margin: 0px; padding: 0px; color: white; position: absolute; bottom: clamp(1%, 0.5vw, 25%); left: 0px; width:100%; text-align:center;">
-                                High Contrast Theme
-                            </p>
-
-
-                        </div>
-
                     </div>
                 </div>
 
-            </div>
+
+            
 
 
-                <!-- Main section for content - end - -->
-                <!-- Lower Link Container - Links for site information - start - -->
-                <div class="lowerLinkContainer">
-                    <div class="grid-ContainerLower">
-                        <div class="lowerItem1 lowerItemFormat">
-                            <a href="index.html">Home  </a>
-                        </div>
-                        <div class="lowerItem2 lowerItemFormat">
-                            <a href="contact.html">Contact  </a>
-                        </div>
-                        <div class="lowerItem3 lowerItemFormat">
-                            <a href="app.html">App  </a>
-                        </div>
-                    </div>                    
+            <!-- Main section for content - end - -->
+            <!-- Lower Link Container - Links for site information - start - -->
+            <div class="lowerLinkContainer">
+                <div class="grid-ContainerLower">
+                    <div class="lowerItem1 lowerItemFormat">
+                        <a href="index.html">Home  </a>
+                    </div>
+                    <div class="lowerItem2 lowerItemFormat">
+                        <a href="contact.html">Contact  </a>
+                    </div>
+                    <div class="lowerItem3 lowerItemFormat">
+                        <a href="app.html">App  </a>
+                    </div>
                 </div>
-                <!-- Lower Link Container - end - -->
-
             </div>
-            <!-- Secondary Container - end - -->
+            <!-- Lower Link Container - end - -->
 
         </div>
-    <!-- Primary Container  - end - -->
+        <!-- Primary Container - end - -->
+    </main>
+    <!-- main  - end - -->
 
     <footer>
         <div class="footerAddBannerContainerOutline">

@@ -20,6 +20,10 @@ body {
     height: auto;
     padding:0px;
 }
+main {
+    padding: clamp(1px, 4vw, 100px);
+    margin: 25px 0px 25px 0px;
+}
 h1 {
     color: white;
     font-size: clamp(18px, 1.5vw, 36px);
@@ -56,32 +60,25 @@ a {
 
 /* Primay container - fit most content inside - start - */
 .primaryContainer {
-    padding: clamp(1px, 4vw, 1000px);
+    padding: clamp(5px, 0.5vw, 10px);
+    background: black;
+    border-radius: 50px;
+    border: 2px solid orange;
+    
 }
 /* - end - */
 
 /* Secondary container - start - */
 .secondaryContainer {
-    padding: clamp(5px, 0.5vw, 10px);
-    background: black;
-    border-radius: 50px;
+    background-image: linear-gradient(rgba(255, 50, 0, 0.1), rgba(25, 75, 255, 0.4));
+    padding: clamp(10px, 2vw, 30px);
+    border: 2px solid orange;
 }
 /* - end - */
 
-/* - orange highlight - background for main body - start - */
-.mainTextBackground {
-    padding: clamp(2px, 0.1vw, 5px);
-    background-color: rgb(255 161 0);
-    margin: clamp(5px, 0.5vw, 10px) 0px clamp(5px, 0.5vw, 10px) 0px;
-}
-/* - end - */
 
-/* Tertiary container - start - */
-.tertiaryContainer {
-    padding: clamp(2px, 0.1vw, 5px);
-    background: black;   
-}
-/* - end - */
+
+
 
 
 
@@ -96,6 +93,7 @@ a {
     border-radius: 10px;
     margin: clamp(8px, 2vw, 64px);
     overflow: hidden;
+    border: 2px solid white;
 }
 /* - end - */
 
@@ -106,7 +104,7 @@ a {
     height: clamp(28px, 3.3vw, 78px);
     padding: 0px;
     margin: clamp(-30px, -2vw, -10px);
-    background-color: rgba(190, 106, 33, 0.8);    
+    background-color: rgba(200, 25, 0, 0.6);    
 }
 /* - end - */
 
@@ -124,21 +122,7 @@ a {
     width: auto;
 }
 /* - end - */
-/* Upside-Down Trapezoid background for text - start - */
-.trapezoidTextBackground {
-    border-left: clamp(20px, 3vw, 75px) solid transparent;
-    border-right: clamp(20px, 3vw, 75px) solid transparent;
-    border-bottom: clamp(25px, 3vw, 75px) solid rgba(0,0,0,1);
-    margin: 0px;
-    padding: 0px;
-    vertical-align: bottom;
-    position: absolute;
-    bottom: 0px;
-    left:0px;
-    right:0px;
-    width: auto;
-}
-/* - end - */
+
 
 
 
@@ -169,7 +153,7 @@ a {
 .grid-containerUpper {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1px 1px;
+    gap: 3px 3px;
     background-color: rgba(0,0,0,0.00);
     padding: clamp(5px, 1vw, 10px);
 }
@@ -194,9 +178,8 @@ a {
     font-size: clamp(14px, 1.25vw, 28px);
     font-family: MainFont, Arial, Times New Roman, Serif;
     text-align: center;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: orange;
+    border-radius: 5px;
+    border: 2px solid orange;
 }
 /* - end - */
 
@@ -219,7 +202,7 @@ a {
 .grid-ContainerLower {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1px 1px;
+    gap: 3px 3px;
     background-color: rgba(0,0,0,0.00);
     padding: clamp(5px, 1vw, 10px);
 }
@@ -243,10 +226,9 @@ a {
     color: white;
     font-size: clamp(14px, 1.25vw, 28px);
     font-family: MainFont, Arial, Times New Roman, Serif;
-    text-align: center;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: orange;
+    text-align: center;   
+    border-radius: 5px;    
+    border: 2px solid orange;
 }
 /* - end - */
 
@@ -305,3 +287,38 @@ footer {
     padding: 0px;
 }
 /* - end - */
+
+/* Read More - hide text */
+#more {
+    display: none;
+}
+/* end */
+/* Read More - hide text */
+#moreUGDR {
+    display: none;
+}
+/* end */
+#moreWCAD {
+    display: none;
+}
+/* end */
+
+
+/* Button Style */
+.buttonStyle {
+    border: 3px solid white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    color: white;
+    font-size: clamp(16px, 1.5vw, 32px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    padding: clamp(8px, 1vw, 16px) clamp(8px, 12vw, 200px) clamp(8px, 1vw, 16px) clamp(8px, 12vw, 200px);
+}
+
+.buttonContainer {
+    text-align: center;
+    margin: 0px 0px clamp(16px, 1.5vw, 32px) 0px;
+}
